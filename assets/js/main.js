@@ -1,7 +1,7 @@
 /*=========== main.js =======================*/
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('% FinanzasPro - Dashboard iniciado correctamente', 'color:#6366f1; font-weight: bold; font-size: 14px;');
+    console.log('%c FinanzasPro - Dashboard iniciado correctamente', 'color:#6366f1; font-weight: bold; font-size: 14px;');
 
 
 //=========1. Datos de la aplicacion =========
@@ -25,7 +25,7 @@ let appData = {
             type: 'TC',
             amount: 4700000,
             interest: 25,
-            dueDate: '20-04-2026',
+            dueDate: '2026-04-16',
             cuota: 670000
         },
         {
@@ -34,7 +34,7 @@ let appData = {
             type: 'TC',
             amount: 1200000,
             interest: 25,
-            dueDate: '20-04-2026',
+            dueDate: '2026-04-16',
             cuota: 250000
         }
     ],
@@ -88,9 +88,9 @@ function saveData() {
 
 
 function loadData() {
-    const saveData = localStorage.getItem('finanzaspro_data');
-    if(saveData) {
-        appData = JSON.parse(saveData);
+    const savedData = localStorage.getItem('finanzaspro_data');
+    if(savedData) {
+        appData = JSON.parse(savedData);
         console.log('Datos cargados desde localstorage');
     }else {
         saveData();  //se guardan los datos iniciales la primera vez
