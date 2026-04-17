@@ -4,86 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinanzasPro - Dashboard</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <aside class="sidebar">
-
         <div class="sidebar__logo">
             <span class="sidebar__logo-icon">
-                <i class="fa-solid fa-wallet">
-
-                </i>
+                <i class="fa-solid fa-wallet"></i>
             </span>
-            <span class="sidebar__logo-text">
-                FinanzasPro
-            </span>
+            <span class="sidebar__logo-text">FinanzasPro</span>
         </div>
     
         <nav class="sidebar__nav">
-
             <ul>
                 <li class="sidebar__item sidebar__item--active">
                     <a href="#" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="fa-solid fa-house"></i>
-                        </span>
-                        <span class="sidebar--label">Dashboard</span>
+                        <span class="sidebar__icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="sidebar__label">Dashboard</span>
                     </a>
                 </li>
-
                 <li class="sidebar__item">
-
                     <a href="#" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="fa-solid fa-credit-card"></i>
-                        </span>
+                        <span class="sidebar__icon"><i class="fa-solid fa-credit-card"></i></span>
                         <span class="sidebar__label">Creditos y TC</span>
                     </a>
                 </li>
-
                 <li class="sidebar__item">
-                    <a href=""" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="fa-solid fa-receipt"></i>
-                        </span>
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon"><i class="fa-solid fa-receipt"></i></span>
                         <span class="sidebar__label">Gastos</span>
                     </a>
-
                 </li>
-
                 <li class="sidebar__item">
                     <a href="#" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="fa-soli fa-money-bill-transfer"></i>
-                        </span>
+                        <span class="sidebar__icon"><i class="fa-solid fa-money-bill-transfer"></i></span>
                         <span class="sidebar__label">Pagos</span>
                     </a>
-
                 </li>
-
                 <li class="sidebar__item">
                     <a href="#" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </span>
+                        <span class="sidebar__icon"><i class="fa-solid fa-chart-line"></i></span>
                         <span class="sidebar__label">Reportes</span>
                     </a>
-
                 </li>
-
             </ul>
-
-
-
         </nav>
-
     </aside>
 
     <div class="wrapper">
-
         <header class="topbar">
             <button class="topbar__menu-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -94,22 +64,23 @@
                 <input type="text" placeholder="Buscar.......">
             </div>
 
-            <div class="topbar__profile">
-                <div class="topbar__avatar">GB</div>
-                <div class="topbar__user-info">
-                    <span class="topbar__user-name">Gilmer</span>
-                    <span class="topbar__user-role">Personal</span>
+            <div class="topbar__actions">
+                <button class="topbar__btn">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <div class="topbar__profile">
+                    <div class="topbar__avatar">GE</div>
+                    <div class="topbar__user-info">
+                        <span class="topbar__user-name">Gilmer Eduardo</span>
+                        <span class="topbar__user-role">Cuenta Personal</span>
+                    </div>
                 </div>
             </div>
-
-            
         </header>
 
         <main class="main-content">
-
             <section class="stats">
-
-                <div class="stats__card">
+                <div class="stats__card stats__card--purple">
                     <div class="stats__info">
                         <span class="stats__number" id="total-deudas">$0</span>
                         <span class="stats__label">Total deudas</span>
@@ -119,48 +90,44 @@
                     </div>
                 </div>
 
-                <div class="stats__card">
+                <div class="stats__card stats__card--green">
                     <div class="stats__info">
-                        <span class="stats__number" id="totalpagado">$0</span>
+                        <span class="stats__number" id="total-pagado">$0</span>
                         <span class="stats__label">Pagado este mes</span>
                     </div>
-                    <div class="stats__icon stats__icon--gren">
+                    <div class="stats__icon stats__icon--green">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    
                 </div>
 
-                <div class="stats__card">
+                <div class="stats__card stats__card--orange">
                     <div class="stats__info">
                         <span class="stats__number" id="total-gastos">$0</span>
                         <span class="stats__label">Gastos del mes</span>
                     </div>
-                    <div class="stats__icon stats__icon-orange">
+                    <div class="stats__icon stats__icon--orange">
                         <i class="fa-solid fa-receipt"></i>
                     </div>
                 </div>
 
-                <div class="stats__card">
+                <div class="stats__card stats__card--red">
                     <div class="stats__info">
                         <span class="stats__number" id="total-intereses">$0</span>
                         <span class="stats__label">Intereses pagados</span>
-                        
                     </div>
-                    <div class="stats__icon stats__icon-red">
+                    <div class="stats__icon stats__icon--red">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                     </div>
                 </div>
-
             </section>
-
         </main>
     </div>
     
 
-    <script src="/assets/js/creditos.js"></script>
-    <script src="/assets/js/gastos.js"></script>
-    <script src="/assets/js/pagos.js"></script>
-    <script src="/assets/js/main.js"></script>
-
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/creditos.js"></script>
+    <script src="assets/js/gastos.js"></script>
+    <script src="assets/js/pagos.js"></script>
+    
 </body>
 </html>
